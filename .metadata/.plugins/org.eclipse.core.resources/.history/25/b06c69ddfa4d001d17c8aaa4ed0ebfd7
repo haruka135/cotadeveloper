@@ -1,0 +1,28 @@
+package dto;
+
+import java.io.Serializable;
+
+
+public class Product implements Serializable {
+	
+	private String pname; // 상품명
+	private String pename; // 상품 영어 명
+	private Integer unitprice; // 판매가
+	private String pid; // 상품코드
+	private String man; // 제조사
+	private Integer unitcoupon; // 사용쿠폰
+	
+	public Product() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Product(String pname, String pename) {
+
+		this.pname = pname;
+		this.pename = pename;
+	}
+	
+	
+
+}

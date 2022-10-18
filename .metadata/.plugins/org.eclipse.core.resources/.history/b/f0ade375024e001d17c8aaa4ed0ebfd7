@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import = "dto.Product" %>
+<%@ page import = "dao.ProductRepository" %>
+
+<%
+
+
+	request.setCharacterEncoding("UTF-8");
+
+	String pname = request.getParameter("pname");
+	String pename = request.getParameter("pename");
+	String unitprice = request.getParameter("unitprice");
+	String pid = request.getParameter("pid");
+
+
+
+
+
+
+
+%>

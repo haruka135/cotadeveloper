@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<jsp:useBean id = "dao" class="member.memberDAO" />
+
+<%
+
+	String userid = request.getParameter("userid");
+	boolean check = dao.idCheck(userid);
+
+
+%>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<br>
+	<center>
+	<b><%= userid %></b>
+	
+	<%
+		if(check) {
+			
+			out.println("는 이미 존재하는 아이디입니다.<br></br>");
+			
+		}else
+	%>
+	
+	</center>
+</body>
+</html>

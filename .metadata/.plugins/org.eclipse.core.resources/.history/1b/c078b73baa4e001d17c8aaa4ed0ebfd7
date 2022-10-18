@@ -1,0 +1,31 @@
+package member;
+
+import java.sql.*;
+
+import javax.sql.*;
+
+import javax.naming.*;
+
+
+public class memberDAO {
+    
+    private Connection getConeection() {
+        
+        Connection conn = null;
+        
+        try {
+            
+            Context init = new InitialContext();
+            
+            DataSource ds = (DataSource)init.lookup("java:comp/env/jdbc/mysql");
+            
+            
+            
+            
+        } catch(Exception e)
+        
+        
+        
+    }
+
+}

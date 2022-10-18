@@ -1,0 +1,33 @@
+package member;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class MemberDAO {
+    
+    private Connection conn;
+    
+    public MemberDAO() {
+        
+        try {
+            
+            String dbURL = "jdbc:mysql://localhost:3306/REGISTER";
+            String dbID = "root";
+            String dbPassword = "83248324";
+            Class.forName("com.mysql.djbc.Driver");
+            conn = DriverManager.getConnection(dbURL, dbID, dbPassword);
+            
+        }catch(Exception e) {
+            
+            e.printStackTrace();
+            
+            
+        }
+        
+        
+        
+    }
+    
+    
+
+}

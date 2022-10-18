@@ -1,0 +1,13 @@
+package dto;
+
+import java.io.Serializable;
+
+
+public class Product implements Serializable {
+	
+	private String pname; // 상품명
+	private String pename; // 상품 영어 명
+	private Integer unitprice; // 판매가
+	private String pid; // 상품코
+
+}

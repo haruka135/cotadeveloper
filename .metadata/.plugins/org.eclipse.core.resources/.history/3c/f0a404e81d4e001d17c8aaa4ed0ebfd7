@@ -1,0 +1,33 @@
+package member;
+
+import java.sql.Connection;
+
+public class MemberDAO {
+    
+    private Connection conn;
+    
+    public MemberDAO {
+        
+        try {
+            
+            String dbURL = "jdbc:mysql://localhost:3306/REGISTER";
+            String dbID = "root";
+            String dbPassword = "83248324";
+            
+            
+        }catch(Exception e) {
+            
+            
+            
+            
+            
+            
+        }
+        
+        
+        
+    }
+    
+    
+
+}
